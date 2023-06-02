@@ -287,3 +287,60 @@ footer{
     
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .inner-container{
+        width: 100%;
+   }
+
+   .main-container{
+    position:relative;
+    top:10px;
+   }
+
+   .banner-1 img{
+    padding: 0px 10px;
+    width: 100%;
+   }
+    
+   .banner-2 .banner-img img {
+    padding: 0px;
+    height: 144px;
+    width: 160px;
+    margin: 0px;
+}
+
+    .items-section3 {
+        margin: 0px;
+        grid-template-columns: repeat(4,25%);
+    }
+
+    .item{
+    min-width: 150px;
+    max-width: 150px;
+    }
+
+    footer{
+        top: 50px;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: var(--fw-500);
+    }
+    
+}
+
+/* {
+    .inner-container{
+        width: 100%;
+   }
+
+   .main-container{
+    position:relative;
+    top:10px;
+   }
+
+   .banner-1 img{
+    padding: 0px 10px;
+    width: 100%;
+   }
+} */
