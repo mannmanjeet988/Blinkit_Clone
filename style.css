@@ -25,6 +25,10 @@ header .container{
     background-color: var(--color-white);
 }
 
+.Login-icon{
+display: none;
+}
+
 .logo, .location, .search-bar, .Login, .MyCart{
     margin: 0px 20px;
 }
@@ -115,6 +119,7 @@ header .container{
     overflow: auto ;
     margin: 0px 15px;
     column-gap: 10px;
+    cursor: pointer;
 }
 
 .banner-2::-webkit-scrollbar{
@@ -212,38 +217,73 @@ footer{
     background-color: var(--color-light-grey);
     position : relative;
     top : 100px;
-    font-weight: var(--fw-600);
-    padding :20px 20px  100px 20px;
+    font-weight: var(--fw-700);
+    padding :20px 20px  50px 20px;
     margin: 30px;
-    
+    font-size: 20px;
 }
 
-.fa-heart{
-    color: red;
-    border : 1px solid black;
-}
 
-/* @media screen and (min-width:320px) and (max-width:480px){
-    .logo, .search-bar, .Login{
+/* Responsiveness */
+@media only screen and (max-width: 768px){
+    header {
+        display: flex;
+        height: 70px;
+        padding: 20px 10px;  
+    }
+
+    .logo, .location, .Login{
         display: none;
     }
 
-    .search-bar {  
-        width: 30%;   
+    .MyCart{
+        margin-right:50px; 
+        width:15%;
+    }
+    .search-bar{
+        width:500px;
+        margin:10px;
+        border: 1px solid black;
+        border-radius: 5px;
     }
 
-     .container header{
-        column-gap: 5px;
-     }
+    .inner-container{
+        width: 100%;
+   }
 
+   .main-container{
+    position:relative;
+    top:10px;
+   }
+
+   .banner-1 img{
+    padding: 0px 10px;
+    width: 100%;
+   }
     
-    .items-section3{
-        display: grid;
-        grid-template-columns: repeat(1,80%);
-        padding: 20px;
-        }
+   .banner-2 .banner-img img {
+    padding: 0px;
+    height: 144px;
+    width: 160px;
+    margin: 0px;
+}
 
-        .section3-img img{
-            width:20%;
-        }
-} */
+    .items-section3 {
+        margin: 0px;
+        grid-template-columns: repeat(4,25%);
+    }
+
+    .item{
+    min-width: 150px;
+    max-width: 150px;
+    }
+
+    footer{
+        top: 50px;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: var(--fw-500);
+    }
+    
+}
+
